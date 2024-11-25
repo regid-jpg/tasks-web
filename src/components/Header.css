@@ -1,0 +1,15 @@
+/* src/components/Header.css */
+.header {
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .header-menu {
+    background-color: white;
+  }
+
+.logo {
+    height: 30px; /* Adjust height */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and menu */
+}
