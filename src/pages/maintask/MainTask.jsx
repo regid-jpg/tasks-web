@@ -105,7 +105,9 @@ const MainTask = () => {
             checked={record.selected}
             onChange={() => handleCheckboxChange(record.key)}
           />
-          <Link to={`/task/${text}`}>{text}</Link>
+          <Link to={`/task/${record.number}`} style={{ color: "blue" }}>
+            {text}
+          </Link>
         </span>
       ),
     },
@@ -124,6 +126,7 @@ const MainTask = () => {
     { title: "Department", dataIndex: "department", key: "department" },
     { title: "Agent", dataIndex: "agent", key: "agent" },
   ];
+  
 
   return (
     <Layout style={{ minHeight: "100vh", display: "flex", flexDirection: "column", backgroundImage: `url('./background.jpg')`}}>
